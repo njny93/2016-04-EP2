@@ -9,4 +9,5 @@ bst.add(tree, 3)
 bst.add(tree, 8)
 bst.add(tree, 9)
 
-print(bst.find(5))
+# print(tree)
+print(bst.find(tree, 5))

@@ -1,16 +1,16 @@
 def create(item):
-    return (item, None, None)
+    return [item, None, None]
 
 def add(tree, item):
     if tree[0] > item:  # left
         if tree[1] == None:
-            tree[1] = (item, None, None)
+            tree[1] = [item, None, None]
             return True
         else:
             add(tree[1], item)
     elif tree[0] < item:    # right
         if tree[2] == None:
-            tree[2] = (item, None, None)
+            tree[2] = [item, None, None]
             return True
         else:
             add(tree[2], item)
@@ -29,4 +29,4 @@ def find(tree, item):
         else:
             return find(tree[2], item)
     else:
-        return tree
+        return item
